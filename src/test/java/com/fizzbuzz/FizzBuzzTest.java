@@ -18,4 +18,10 @@ public class FizzBuzzTest {
 		Assert.assertEquals("Fizz", fizzBuzzConverter.converter(3));
 		Assert.assertEquals("Fizz", fizzBuzzConverter.converter(33));
 	}
+	
+	@Test
+	public void fizzBuzzConvertorLeavesMultipleOfFive() {
+		FizzBuzzConverter fizzBuzzConverter = new FizzBuzzConverter();
+		Assert.assertEquals("Fizz", fizzBuzzConverter.converter(5));
+	}
 }
