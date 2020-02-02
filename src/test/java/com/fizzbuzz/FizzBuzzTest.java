@@ -16,5 +16,6 @@ public class FizzBuzzTest {
 	public void fizzBuzzConvertorLeavesMultipleOfThree() {
 		FizzBuzzConverter fizzBuzzConverter = new FizzBuzzConverter();
 		Assert.assertEquals("Fizz", fizzBuzzConverter.converter(3));
+		Assert.assertEquals("Fizz", fizzBuzzConverter.converter(33));
 	}
 }
