@@ -22,6 +22,6 @@ public class FizzBuzzTest {
 	@Test
 	public void fizzBuzzConvertorLeavesMultipleOfFive() {
 		FizzBuzzConverter fizzBuzzConverter = new FizzBuzzConverter();
-		Assert.assertEquals("Fizz", fizzBuzzConverter.converter(5));
+		Assert.assertEquals("Buzz", fizzBuzzConverter.converter(5));
 	}
 }
