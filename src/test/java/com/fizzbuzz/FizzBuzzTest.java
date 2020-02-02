@@ -5,7 +5,7 @@ import org.junit.Test;
 
 public class FizzBuzzTest {
 
-	FizzBuzzConverter fizzBuzzConverter = new FizzBuzzConverter();
+	private FizzBuzzConverter fizzBuzzConverter = new FizzBuzzConverter();
 	
 	@Test
 	public void fizzBuzzConvertorLeavesNormalNumbersAlone() {
@@ -35,5 +35,10 @@ public class FizzBuzzTest {
 	  for(int i=1; i<=100; i++){ 
 	    System.out.println(fizzBuzzConverter.converter(i)); 
 	  } 
+	}
+	
+	@Test 
+	public void testForInvalidNumbers() {
+		Assert.assertEquals("Please enter a valid no between 1 to 100.", fizzBuzzConverter.converter(-1));
 	}
 }
