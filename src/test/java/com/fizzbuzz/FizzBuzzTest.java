@@ -9,5 +9,6 @@ public class FizzBuzzTest {
 	public void fizzBuzzConvertorLeavesNormalNumbersAlone() {
 		FizzBuzzConverter fizzBuzzConverter = new FizzBuzzConverter();
 		Assert.assertEquals("1", fizzBuzzConverter.converter());
+		Assert.assertEquals("2", fizzBuzzConverter.converter());
 	}
 }
