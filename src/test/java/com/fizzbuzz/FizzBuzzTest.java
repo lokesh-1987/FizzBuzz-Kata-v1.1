@@ -31,4 +31,12 @@ public class FizzBuzzTest {
 		FizzBuzzConverter fizzBuzzConverter = new FizzBuzzConverter();
 		Assert.assertEquals("FizzBuzz", fizzBuzzConverter.converter(60));
 	}
+	
+	@Test 
+	public void printTheHundredFizzBuzzes() { 
+	  FizzBuzzConverter fizzBuzzConverter = new FizzBuzzConverter(); 
+	  for(int i=1; i<=100; i++){ 
+	    System.out.println(fizzBuzzConverter.converter(i)); 
+	  } 
+	}
 }
