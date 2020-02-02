@@ -36,9 +36,4 @@ public class FizzBuzzTest {
 	    System.out.println(fizzBuzzConverter.converter(i)); 
 	  } 
 	}
-	
-	@Test 
-	public void testForInvalidNumbers() {
-		Assert.assertEquals("Please enter a valid no between 1 to 100.", fizzBuzzConverter.converter(-1));
-	}
 }
